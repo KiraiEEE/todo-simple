@@ -49,7 +49,15 @@ body .container .todos {
 }
 
 body .container .todos li {
-  margin: 1em;
+  margin: 0.9em;
+}
+
+body .container .todos li:hover {
+  cursor: pointer;
+}
+
+body .container .todos li.completed {
+  text-decoration: line-through;
 }
 
 body .container #btn {

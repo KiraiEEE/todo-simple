@@ -17,6 +17,11 @@ form.addEventListener('submit', (e) => {
     if(todoText || btn.clicked){
         const todoEl = document.createElement('li');//9otlou a3ml li fi var todoEl
         todoEl.innerText = todoText;//9otlou 7ot feha ly fil input
+
+        todoEl.addEventListener('click', () => {
+            todoEl.classList.toggle('completed');//ta3ty class completed lel todos
+        });
+
         todos.appendChild(todoEl);//w orbotha bel todos
         input.value = '';//fassa5ly elly fil input
         emp.innerText = "";//ne77ily kilmet empty

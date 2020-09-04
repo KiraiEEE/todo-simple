@@ -36,10 +36,16 @@ body{
             margin: 1em;
             background: darken($bg,6%);
             li{
-                margin: 1em;
-                
+                margin: 0.9em;
+            }
+            li:hover{
+                cursor: pointer;
+            }
+            li.completed{
+                text-decoration: line-through;
             }
         }
+        
         #btn{
             padding: 0.5em;
             background: darken($bg,6%);
