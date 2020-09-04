@@ -14,6 +14,9 @@ body{
     align-items: center;
     background: $bg;
     color: $text;
+    h1{
+        margin-bottom: 3em;
+    }
     .container{
         text-align: center;
         #input{
@@ -34,7 +37,7 @@ body{
             padding: 0.5em;
             border-radius: 5px;
             margin: 1em;
-            background: darken($bg,6%);
+            background: darken($bg,5%);
             li{
                 margin: 0.9em;
             }
@@ -43,6 +46,7 @@ body{
             }
             li.completed{
                 text-decoration: line-through;
+                opacity: 0.6;
             }
         }
         
@@ -58,4 +62,8 @@ body{
 }
 .shadow{
 box-shadow: 10px 10px 108px -28px rgba(0,0,0,0.5);
+}
+p{
+    color: lighten($bg,50%) ;
+    font-size: smaller;
 }

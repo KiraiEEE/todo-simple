@@ -22,6 +22,12 @@ form.addEventListener('submit', (e) => {
             todoEl.classList.toggle('completed');//ta3ty class completed lel todos
         });
 
+        todoEl.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+
+            todoEl.remove();
+        })
+
         todos.appendChild(todoEl);//w orbotha bel todos
         input.value = '';//fassa5ly elly fil input
         emp.innerText = "";//ne77ily kilmet empty
