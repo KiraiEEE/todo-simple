@@ -2,6 +2,7 @@
 const form = document.getElementById('form');
 const input = document.getElementById('input');
 const todos = document.getElementById('todos');
+const btn = document.getElementById('btn');
 
 //9olt 7ot empty fil list w 7ottelha class .empty
 let emp = document.createElement('li');
@@ -13,7 +14,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();//bech ya3malch refresh lel page
     const todoText = input.value;//lenna tet5azen valeur l input
     //9olt ken tfa3let l input heky abda
-    if(todoText){
+    if(todoText || btn.clicked){
         const todoEl = document.createElement('li');//9otlou a3ml li fi var todoEl
         todoEl.innerText = todoText;//9otlou 7ot feha ly fil input
         todos.appendChild(todoEl);//w orbotha bel todos

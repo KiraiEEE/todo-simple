@@ -22,7 +22,7 @@ body{
             padding: 0.5em;
             background: $bg;
             color:$text;
-            border: $border solid 2px;
+            border: lighten($bg,25%) solid 2px;
             border-radius: 3px;
             transition: ease 0.3s;
         }
@@ -40,10 +40,16 @@ body{
                 
             }
         }
+        #btn{
+            padding: 0.5em;
+            background: darken($bg,6%);
+            border: solid 2px lighten($bg,25%);
+        }
     }
 }
 .empty{
      opacity: 0.5;
+}
 .shadow{
 box-shadow: 10px 10px 108px -28px rgba(0,0,0,0.5);
 }

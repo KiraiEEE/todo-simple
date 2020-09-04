@@ -30,7 +30,7 @@ body .container #input {
   padding: 0.5em;
   background: #323232;
   color: #f1f1f1;
-  border: #ffffff8f solid 2px;
+  border: #727272 solid 2px;
   border-radius: 3px;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
@@ -50,6 +50,12 @@ body .container .todos {
 
 body .container .todos li {
   margin: 1em;
+}
+
+body .container #btn {
+  padding: 0.5em;
+  background: #232323;
+  border: solid 2px #727272;
 }
 
 .empty {
